@@ -11,6 +11,24 @@
     <h1>Welcome to My Demo Website</h1>
     <p>This is a simple website hosted for free using GitHub Pages.</p>
     <button onclick="sayHello()">Click Me</button>
+    <br /><br />
+    <button onclick="changeBackgroundColor()">Change Background Color</button>
+    <br /><br />
+    
+    <!-- Form for validation -->
+    <form onsubmit="return validateForm()">
+      <input type="text" id="name" placeholder="Enter your name" />
+      <input type="email" id="email" placeholder="Enter your email" />
+      <button type="submit">Submit</button>
+    </form>
+
+    <br />
+    <button onclick="saveToLocalStorage()">Save Data to LocalStorage</button>
+    <br />
+    <button onclick="displaySavedData()">Show Saved Data</button>
+    <div id="savedData"></div>
+    
+    <div id="ball" style="position: absolute; width: 50px; height: 50px; background-color: red; border-radius: 50%;"></div>
   </div>
   <script src="script.js"></script>
 </body>
