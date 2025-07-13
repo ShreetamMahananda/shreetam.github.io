@@ -66,7 +66,7 @@ function animateBall() {
   if (ballPos >= window.innerHeight - 50 || ballPos <= 0) {
     ballPos = (ballPos >= window.innerHeight - 50) ? window.innerHeight - 50 : 0;
   }
-  ballPos += (ballPos <= 0) ? 50 : -5; // Move up or down
+  ballPos += (ballPos <= 0) ? 5 : -5; // Move up or down
   ball.style.top = ballPos + "px";
   requestAnimationFrame(animateBall);
 }
